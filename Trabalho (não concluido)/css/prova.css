@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#titulo{
+    font-size: 25px;
+}
+.topo{
+    padding: 35px 35px;
+    margin: 0;
+
+    background-color: rgb(9, 9, 131);
+}
+
+.topo ul{
+    justify-content: center;
+    text-decoration: none;
+}
+
+.topo li{
+    font-size: 20px;
+    margin: 35px;
+    text-decoration: solid;
+    text-transform: none;
+    display: inline;
+}
+
+.topo a{
+    text-decoration:none;
+    color:white;
+    align-items:center;
+    align-content:center;
+    flex-direction:row;
+    padding: 25px;
+}
+
+.topo a:hover {
+    border-bottom: solid white 5px;
+}
+
+.convert{
+    font-size: 20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.convert p{
+    padding: 10px;
+}
+
+.convert span{
+    padding-left: 10px;
+}
+
+.convert input{
+    height: 25px;
+    width: 200px;
+}
+#paragrafos{
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#paragrafos img{
+    width: 80px;
+}
+
+#enviar{
+    width: 70px;
+    height: 34px;
+    font-size: 15px;
+    text-decoration: solid black;
+    margin-left: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.input{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    text-decoration: solid;
+}
