@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/loja.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700|Montserrat:400,700' rel='stylesheet'
+		type='text/css'>
+	<title>Loja</title>
+</head>
+
+<body>
+	<div id="tudo">
+		<div id="cabecalho">
+			<img id="logo" src="../imagens/Logo_vertical.gif">
+			<h1>Loja do Primeiro Semestre do ADS</h1>
+		</div>
+		<div id="principal">
+			<div id="formulario">
+				<form action="processar_sugestao.php" method="GET">
+					<fieldset>
+						<legend>Dados pessoais</legend>
+						<div class="linha">
+							<label for="nome">Nome:</label>
+							<input id="nome" type="text" name="nome" placeholder="Digite seu nome" autofocus required
+								size="45"><span id="ajuda_nome" class="vermelho"></span>
+						</div>
+						<div class="linha">
+							<label for="email">E-mail:</label>
+							<input type="email" id="email" name="email" placeholder="Digite seu email" size="45"
+								required><span id="ajuda_email" class="vermelho"></span>
+						</div>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Camisetas</legend>
+						<div class="linha">
+							<label for="quantCamMasc">Quantidade de camisetas masculinas:</label>
+							<input type="text" id="quantCamMasc" name="quantCamMasc" value="0" readonly>
+							<span id="bt+Masc">+</span>&nbsp;<span id="bt-Masc">-</span>
+						</div>
+						<div class="linha">
+							<label for="quantCamFem">Quantidade de camisetas femininas:</label>
+							<input type="text" id="quantCamFem" name="quantCamFem" value="0" readonly>
+							<span id="bt+Fem">+</span>&nbsp;<span id="bt-Fem">-</span>
+						</div>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Comentário</legend>
+						<textarea name="sugestao" rows="5" cols="69"
+							placeholder="Escreva aqui caso deseje fazer algum comentário"></textarea>
+					</fieldset>
+					<br>
+				</form>
+			</div>
+		</div>
+		<div id="rodape">
+			<p>Alunos ADS &copy;</p>
+			<p>Rua Santos Dumont, 2127 | Bairro Albatroz | CEP: 95520-000 | Osório/RS</p>
+		</div>
+	</div>
+	<div class="rodapeFixo">
+		<label for="total">Total: </label>
+		<input class="direita" id="total" type="text" name="total" value="R$ 0,00" readonly size=10>
+		<button id="concluir">Concluir Compra</button>
+	</div>
+	<script type="text/javascript" src="../javascript/loja.js"></script>
+</body>
+
+</html>
